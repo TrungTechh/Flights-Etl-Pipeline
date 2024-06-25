@@ -187,9 +187,7 @@ Verify the data is loaded into hdfs.
 
 ![](./images/data_hdfs.png)
 
-
-
-### 4.6 User interfaces
+### 4.5 User interfaces
 
 1. <http://localhost:8080> - Airflow
 2. <http://localhost:32763> - Namenode
