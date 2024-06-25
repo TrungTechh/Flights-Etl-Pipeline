@@ -107,7 +107,7 @@ It took me about 5 hours to successfully load all the data.
 
 ![](/images/time_ingest2postgres.jpg)
 
-### 4.3 Configuration spark and processing
+### 4.4 Configuration spark and processing
 
 Insert below properties in `/docker/spark/spark-base/spark-defaul.conf`
 ```
@@ -162,7 +162,7 @@ while True:
     max_index += chunk_size
 ```
 
-### 4.4 Trigger DAGS
+### 4.5 Trigger DAGS
 
 Before trigger the DAGS, we need to configure some connection in airflow. From Airflow UI <http://localhost:8080>, navigate to Admin > Connections. Then add two records.
 
@@ -187,7 +187,7 @@ Verify the data is loaded into hdfs.
 
 ![](./images/data_hdfs.png)
 
-### 4.5 User interfaces
+### 4.6 User interfaces
 
 1. <http://localhost:8080> - Airflow
 2. <http://localhost:32763> - Namenode
